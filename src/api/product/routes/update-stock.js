@@ -3,11 +3,9 @@ export default {
   routes: [
     {
       method: 'POST',
-      path: '/update-stock',
+      path: '/products/update-stock', // <-- prefijo /products
       handler: 'product.updateStock',
-      config: {
-        auth: false, // cambiar a true si exigís autenticación
-      },
+      config: { auth: false },
     },
   ],
 };
