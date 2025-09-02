@@ -1,14 +1,12 @@
-// andres-web\backend\src\api\product\routes\update-stock.js
-import { factories } from '@strapi/strapi';
-
+// src/api/product/routes/update-stock.js
 export default {
   routes: [
     {
       method: 'POST',
       path: '/update-stock',
-      handler: 'product.update-stock.updateStock', // 👈 más específico
+      handler: 'product.updateStock',
       config: {
-        auth: false,
+        auth: false, // cambiar a true si exigís autenticación
       },
     },
   ],
