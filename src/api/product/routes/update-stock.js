@@ -3,7 +3,7 @@ export default {
   routes: [
     {
       method: 'POST',
-      path: '/products/update-stock', // <-- prefijo /products
+      path: '/update-stock', // <-- prefijo /products
       handler: 'product.updateStock',
       config: { auth: false },
     },
